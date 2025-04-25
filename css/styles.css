@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f6f3fa;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #8300e9;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.tab.active {
+  background: #8300e9;
+  color: white;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.loading {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.quotes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.quote-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  position: relative;
+  text-align: left;
+}
+
+.quote-text {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.quote-author {
+  font-size: 14px;
+  color: #555;
+}
+
+.save-btn, .delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #8300e9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #e53935;
+}
