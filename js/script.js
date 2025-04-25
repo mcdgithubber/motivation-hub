@@ -35,7 +35,6 @@ async function loadRandomQuotes() {
       <div class="quote-author">— ${q.author}</div>
       <div class="button-row">
     <button class="save-btn">Save</button>
-<button class="delete-btn">Delete</button>
   </div>
     `;
     card.querySelector('.save-btn').addEventListener('click', () => {
