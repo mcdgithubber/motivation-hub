@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Motivation Hub</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>✨ Motivation Hub ✨</h1>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="random">Random Quotes</button>
+      <button class="tab" data-tab="saved">Saved Quotes</button>
+    </div>
+
+    <div id="tab-content">
+      <div id="random" class="tab-panel active">
+        <div id="random-loading" class="loading">Loading random quotes...</div>
+        <div id="random-quotes" class="quotes-container"></div>
+      </div>
+      <div id="saved" class="tab-panel">
+        <div id="saved-loading" class="loading">Loading saved quotes...</div>
+        <div id="saved-quotes" class="quotes-container"></div>
+      </div>
+    </div>
+  </div>
+
+<script src="js/quotes-api.js"></script>
+  <script src="js/storage.js"></script>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
