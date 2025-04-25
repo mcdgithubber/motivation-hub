@@ -33,7 +33,10 @@ async function loadRandomQuotes() {
     card.innerHTML = `
       <div class="quote-text">"${q.content}"</div>
       <div class="quote-author">— ${q.author}</div>
-      <button class="save-btn">Save</button>
+      <div class="button-row">
+    <button class="save-btn">Save</button>
+<button class="delete-btn">Delete</button>
+  </div>
     `;
     card.querySelector('.save-btn').addEventListener('click', () => {
       saveQuote(q);
@@ -64,7 +67,9 @@ function loadSavedQuotes() {
       card.innerHTML = `
         <div class="quote-text">"${q.content}"</div>
         <div class="quote-author">— ${q.author}</div>
-        <button class="delete-btn">Delete</button>
+        <div class="button-row">
+    <button class="delete-btn">Delete</button>
+  </div>
       `;
       card.querySelector('.delete-btn').addEventListener('click', () => {
         deleteQuote(i);
